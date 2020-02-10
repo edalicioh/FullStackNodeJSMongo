@@ -13,8 +13,7 @@ const { csrfTokenError , csrfMiddleware} = require('./app/middlewares/middleware
 const app = express();
 
 mongoose.connect(
-  process.env.APP_MONGO_CONNECTION
-   , 
+  process.env.APP_MONGO_CONNECTION, 
   { 
     useNewUrlParser: true ,
     useUnifiedTopology: true 
